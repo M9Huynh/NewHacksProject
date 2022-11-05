@@ -11,9 +11,9 @@ const Navbar = () => {
                     </Typography>
 
                     <Tabs sx={{marginLeft: 'auto'}} textColor="inherit">
-                        <Tab label="Map Search"/>
-                        <Tab label="For Rent"/>
-                        <Tab label="Advertise"/>
+                        <Tab href="/map" label="Map Search"/>
+                        <Tab href="/for-rent" label="For Rent"/>
+                        <Tab href="/lister" label="Advertise"/>
                     </Tabs>
 
                     <Button variant="contained">Login{""}</Button>
