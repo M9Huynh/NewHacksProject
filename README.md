@@ -1,6 +1,6 @@
 # NewHacksProject
 #### Authors
-- Matthew
+- Matthew Huynh
 - Jennifer Luk
 - Ursula Chui
 - Cieran Diebolt
