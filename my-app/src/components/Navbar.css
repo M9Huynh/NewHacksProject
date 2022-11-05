@@ -1,0 +1,39 @@
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    padding: 10px 20px;
+}
+
+.navLinks{
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1; 
+    place-items: center;
+}
+
+.navLogo{
+    display: flex;
+    border: 2px solid black;
+    text-transform: uppercase;
+    align-items: center;
+    font-weight: bold;
+    font-family: optima;
+    color: black;
+    padding: 10px 20px;
+}
+
+.navLinks>a{
+    text-decoration: none;
+    border:none; 
+    font-weight: bold;
+    color: black;
+}
+
+.navLinks>a:hover{
+    text-decoration: none;
+    border:none; 
+    font-weight: bold;
+    color: blue;
+}

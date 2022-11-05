@@ -1,27 +1,20 @@
 import React from "react"
-import {AppBar, Typography, Toolbar, Tabs, Tab, Button} from '@mui/material';
+import './Navbar.css'
 
 const Navbar = () => {
     return (
-        <React.Fragment>
-            <AppBar sx={{background: '#776fdb'}}>
-                <Toolbar>
-                    <Typography variant ='h6' component='div'>
-                        HOUSING
-                    </Typography>
+        <div className="navBar container">
+        <div className="navLogo">
+            Test
+        </div>
 
-                    <Tabs sx={{marginLeft: 'auto'}} textColor="inherit">
-                        <Tab href="/map" label="Map Search"/>
-                        <Tab href="/for-rent" label="For Rent"/>
-                        <Tab href="/lister" label="Advertise"/>
-                    </Tabs>
-
-                    <Button variant="contained">Login{""}</Button>
-                    <Button sx={{marginLeft: '10px'}}variant="contained">Get Started{""}</Button>
-
-                </Toolbar>
-            </AppBar>
-        </React.Fragment>
+        <div className="navLinks">
+            <a href="/">one</a>
+            <a href="/">two</a>
+            <a href="/">three</a>
+            <a href="/">four</a>
+        </div>
+        </div>
     )
 }
 
