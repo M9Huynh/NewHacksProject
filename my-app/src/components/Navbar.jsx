@@ -4,9 +4,11 @@ import {AppBar, Typography, Toolbar, Tabs, Tab, Button} from '@mui/material';
 const Navbar = () => {
     return (
         <React.Fragment>
-            <AppBar sx={{background: '#2c82c9'}}>
+            <AppBar sx={{background: '#776fdb'}}>
                 <Toolbar>
-                    <Typography>HOUSING</Typography>
+                    <Typography variant ='h6' component='div'>
+                        HOUSING
+                    </Typography>
 
                     <Tabs sx={{marginLeft: 'auto'}} textColor="inherit">
                         <Tab label="Map Search"/>
