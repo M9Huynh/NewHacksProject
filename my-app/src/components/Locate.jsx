@@ -33,5 +33,5 @@ export class Locate extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: 'AJzaSyCJxuvt4wLLr1WISJVSQBeK93O9IvOnJmw'
+  apiKey: 'AIzaSyCJxuvt4wLLr1WISJVSQBeK93O9IvOnJmw'
 })(Locate);
