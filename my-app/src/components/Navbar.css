@@ -4,6 +4,8 @@
     align-items: center;
     flex: 1;
     padding: 10px 20px;
+    background-color: white;
+
 }
 
 .navLinks{
@@ -42,5 +44,5 @@
     text-decoration: none;
     border:none; 
     font-weight: bold;
-    color: blue;
+    color: red;
 }

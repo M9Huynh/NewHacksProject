@@ -1,24 +1,40 @@
 export const nav = [
   {
     text: "map",
-    path: "/",
+    path: "/map",
   },
   {
     text: "rent",
-    path: "/",
+    path: "/rent",
   },
   {
     text: "sell",
-    path: "/",
+    path: "/sell",
   },
 ]
 export const featured = [
     {
         id: 1,
         cover: "../images/listings/p-1.jpg",
-        name: "House 1",
         location: "19 Emerson St, Hamilton, ON",
         price: "$600",
         type: "House",
-      },
+        length: "Sept 1, 2022-Dec 31,2022"
+    },
+    
+    {
+      id:2,
+      cover: "../images/listings/p-2.jpg",
+      location: "19 Emerson St, Hamilton, ON",
+      price: "$600",
+      type: "House",
+    },
+
+    {
+      id: 3,
+      cover: "../images/listings/p-3.jpg",
+      location: "19 Emerson St, Hamilton, ON",
+      price: "$600",
+      type: "House",
+    },
 ]
