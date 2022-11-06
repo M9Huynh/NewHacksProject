@@ -1,11 +1,18 @@
 import './App.css';
 import Card from './components/Card'
+import Home from './components/Home'
+import FeaturedCard from './components/featured/FeaturedCard';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Locate from './components/Locate'
 
 function App() {
   return (
-   <div className="App"> 
-      <Card/>
-   </div>
+   <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Home />}/>
+      <Route path='/for-rent' element={<FeaturedCard />}/>
+    </Routes>
+   </BrowserRouter>
   );
 }
 

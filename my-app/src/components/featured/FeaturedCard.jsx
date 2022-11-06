@@ -1,17 +1,36 @@
 import React from 'react'
-import {featured} from "../../data/Data"
+import Navbar from '../Navbar'
+import {featured} from "../data/data"
+import { Link } from 'react-router-dom';
 
 const FeaturedCard = () => {
     return (
       <>
-        <div className='content grid5 mtop'>
-          {featured.map((items, index) => (
-            <div className='box' key={index}>
-              <img src={items.cover} alt='' />
-              <h4>{items.name}</h4>
-              <label>{items.total}</label>
-            </div>
-          ))}
+        <Navbar/>
+        
+        <div className="grid3 mtop">
+          {featured.map((val, index) => {
+            const { cover, location, address, price, type } = val
+            return(
+                <div className="box shadow" key = {index}>
+                  
+                    <div className= "img">
+                        <img src={cover} alt=''/>
+                    </div>
+
+                    <div className= "text">
+                        <p>
+                          <b>{location}</b><br></br>
+                          {price}/month
+                        </p>
+                    </div>
+                    
+
+                </div>
+                
+            )     
+          }
+          )}
         </div>
       </>
     )
