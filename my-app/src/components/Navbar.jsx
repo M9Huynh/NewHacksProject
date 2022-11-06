@@ -2,7 +2,6 @@ import React from "react"
 import './Navbar.css'
 import { Button, Toolbar } from "@mui/material";
 import {BrowserRouter as Link} from 'react-router-dom'
-import MenuBar from './components/MenuBar'
 const Navbar = () => {
 
     return (
