@@ -19,7 +19,9 @@ export const featured = [
         location: "19 Emerson St, Hamilton, ON",
         price: "$600",
         type: "House",
-        length: "Sept 1, 2022-Dec 31,2022"
+        length: "Sept 1, 2022-Dec 31,2022",
+        lat: "43.2562975",
+        lng: "-79.9201851"
     },
     
     {
@@ -28,6 +30,8 @@ export const featured = [
       location: "19 Emerson St, Hamilton, ON",
       price: "$600",
       type: "House",
+      lat: "43.2570352",
+      lng: "-79.9197441"
     },
 
     {
@@ -36,5 +40,7 @@ export const featured = [
       location: "19 Emerson St, Hamilton, ON",
       price: "$600",
       type: "House",
+      lat: "43.2584612",
+      lng: "-79.9154525"
     },
 ]
