@@ -16,7 +16,6 @@ export const featured = [
     {
         id: 1,
         cover: "../images/listings/p-1.jpg",
-        address: "House 1",
         location: "19 Emerson St, Hamilton, ON",
         price: "$600",
         type: "House",
@@ -25,8 +24,7 @@ export const featured = [
     
     {
       id:2,
-      cover: "../images/listings/p-1.jpg",
-      address: "House 1",
+      cover: "../images/listings/p-2.jpg",
       location: "19 Emerson St, Hamilton, ON",
       price: "$600",
       type: "House",
@@ -34,8 +32,7 @@ export const featured = [
 
     {
       id: 3,
-      cover: "../images/listings/p-1.jpg",
-      address: "House 1",
+      cover: "../images/listings/p-3.jpg",
       location: "19 Emerson St, Hamilton, ON",
       price: "$600",
       type: "House",

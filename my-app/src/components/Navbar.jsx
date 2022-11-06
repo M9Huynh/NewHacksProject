@@ -8,7 +8,7 @@ const Navbar = () => {
     return (
         <div className="navBar container">
         <div className="navLogo">
-            <a href="/">Test</a>
+            <a href="/">Sweet Home</a>
         </div>
 
         <div className="navLinks">
@@ -19,7 +19,7 @@ const Navbar = () => {
 
         <div>
            <Toolbar>
-                <Button sx={{marginLeft: 'auto', color:'white'}} variant="contained" color="warning">Login</Button>
+                <Button sx={{marginLeft: 'auto', color:'white'}} variant="contained" color="error">Login</Button>
            </Toolbar>
         </div>
         </div>
