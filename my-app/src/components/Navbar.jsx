@@ -1,7 +1,6 @@
 import React from "react"
 import './Navbar.css'
-import { Button, Toolbar } from "@mui/material";
-import {BrowserRouter as Link} from 'react-router-dom'
+import Pop from './Pop'
 const Navbar = () => {
 
     return (
@@ -17,9 +16,7 @@ const Navbar = () => {
         </div>
 
         <div>
-           <Toolbar>
-                <Button sx={{marginLeft: 'auto', color:'white'}} variant="contained" color="error">Login</Button>
-           </Toolbar>
+            <Pop/>
         </div>
         </div>
 
