@@ -3,11 +3,13 @@ import { Map, GoogleApiWrapper } from 'google-maps-react';
 import { Marker } from '@react-google-maps/api'
 import { Grid } from '@mui/material';
 import { Box } from '@mui/system';
+import Navbar from './Navbar';
 
 
 export class Locate extends Component {
   render() {
     return (
+        <div><Navbar></Navbar>
         <Map
         google={this.props.google}
         zoom={15}
@@ -24,6 +26,7 @@ export class Locate extends Component {
           name={'Kenyatta International Convention Centre'} position={{lat: 43.2562975, lng: -79.9201851}} 
         ></Marker>
       </Map>
+      </div>
     );
   }
 }
