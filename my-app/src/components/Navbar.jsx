@@ -1,7 +1,7 @@
 import React from "react"
 import './Navbar.css'
 import { Button, Toolbar } from "@mui/material";
-import AccountCircle from '@mui/icons-material/AccountCircle';
+import {BrowserRouter as Link} from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -19,7 +19,7 @@ const Navbar = () => {
 
         <div>
            <Toolbar>
-                <Button sx={{marginLeft: 'auto', color:'white'}} variant="contained" color="warning" endIcon={<AccountCircle />}>Login</Button>
+                <Button sx={{marginLeft: 'auto', color:'white'}} variant="contained" color="warning">Login</Button>
            </Toolbar>
         </div>
         </div>
