@@ -4,6 +4,7 @@ import { Button, Toolbar } from "@mui/material";
 import AccountCircle from '@mui/icons-material/AccountCircle';
 
 const Navbar = () => {
+
     return (
         <div className="navBar container">
         <div className="navLogo">
@@ -15,6 +16,7 @@ const Navbar = () => {
             <a href="/for-rent">Rent</a>
             <a href="/sell">Advertise</a>
         </div>
+
         <div>
            <Toolbar>
                 <Button sx={{marginLeft: 'auto', color:'white'}} variant="contained" color="warning" endIcon={<AccountCircle />}>Login</Button>
