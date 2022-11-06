@@ -4,15 +4,24 @@ import React from 'react'
 
 class Entry extends React.Component {
   state = {
-    x: null,
-    avail_rooms: null,
+    x: 1,
+    rooms: []
   }
 
-updateAvailableRooms(i) {
-  this.setState({x: i.target.value});
-}
+  handleAddBedroom() {
+    // I admit defeat
+    var rooms = this.state.rooms
+    var x = this.state.x
+    rooms.push(x)
+    x=x+1
+    this.setState({
+      x: x,
+      rooms: rooms,
+    })
+  }
 
   render() {
+    const rooms = this.state.rooms
   return (
     <div
     style={{
@@ -32,7 +41,7 @@ updateAvailableRooms(i) {
         <TextField id="total-room-entry" label="Total Bedrooms" variant="standard" fullWidth inputProps={{ inputMode: 'numeric', pattern: '[0-9]*'}} required={true}/>
       </Grid>
       <Grid item xs={3}>
-        <TextField id="available-room-entry" label="Available Bedrooms" variant="standard" fullWidth inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }} value = {this.state.x} onChange={this.updateAvailableRooms} required={true} />
+        <TextField id="available-room-entry" label="Available Bedrooms" variant="standard" fullWidth inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }} required={true} />
       </Grid>
       <Grid item xs={3}>
         <TextField id="bathroom-entry" label="Bathrooms" variant="standard" fullWidth required={true}/>
@@ -53,12 +62,12 @@ updateAvailableRooms(i) {
         <Typography variant='h6' align='left'>Please Enter Information About Available Rooms Below.</Typography>  
       </Grid> 
       <Grid item xs={2}>
-        <Button variant='outlined'>Add Bedrooms</Button>
+        <Button variant='outlined' onClick={this.handleAddBedroom}>Add Bedroom</Button>
       </Grid>
       <Grid item xs={12}>
-        <Room x={1}/>
-        <Room x={2}/>
-        <Room x={3}/>
+        {rooms.map((r) => (
+          <Room x={r} />
+        ))}
       </Grid>
     </Grid>
     </div>
@@ -94,11 +103,14 @@ class Room extends React.Component {
           <Grid m={1} item xs={5}>
             <TextField id="price-entry" label="Price (Monthly)" variant="standard" fullWidth required={true}/>
           </Grid>
-          <Grid m={1} item xs={5}>
+          <Grid m={1} item xs={3}>
             <TextField id="floor-entry" label="Floor" variant="standard" fullWidth required={true}/>
           </Grid>
           <Grid m={1} item xs={10}>
             <TextField id="note-entry" label="Additional Information" variant="standard" fullWidth/>
+          </Grid>
+          <Grid m={1} item xs={2}>
+            <Button variant='outlined' id="remove-room" color="error">X</Button>
           </Grid>
       </div>
     )
